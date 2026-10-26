@@ -1,0 +1,22 @@
+{
+  "name": "ipmi-platform-v6",
+  "private": true,
+  "version": "6.1.0",
+  "workspaces": [
+    "apps/web",
+    "apps/api",
+    "packages/contracts"
+  ],
+  "scripts": {
+    "dev:web": "npm --workspace apps/web run dev",
+    "build:web": "npm --workspace apps/web run build",
+    "dev:api": "npm --workspace apps/api run dev",
+    "test": "node --test tests/*.test.mjs",
+    "check": "npm test && npm run build:web",
+    "migrate": "npm --workspace apps/api run migrate",
+    "start:api": "npm --workspace apps/api run start"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}
