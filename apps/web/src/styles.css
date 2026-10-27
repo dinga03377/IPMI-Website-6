@@ -169,7 +169,14 @@
     align-items: center;
   }
   .nav .brand .mark {
-    flex: 0 0 auto;
+    display: grid;
+    place-items: center;
+    flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    line-height: 1;
+    text-align: center;
   }
   .nav-actions {
     display: flex;
